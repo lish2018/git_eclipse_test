@@ -1,0 +1,3 @@
+# git_eclipse_test
+spring_cloud_test
+这是一个尝试与eclipse配合的测试项目
