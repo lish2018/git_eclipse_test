@@ -3,9 +3,8 @@ package com.lish.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
-
-import com.lish.myselfrule.MyselfRule;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author Lish
@@ -13,9 +12,10 @@ import com.lish.myselfrule.MyselfRule;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "testCloud-dept",configuration = MyselfRule.class)
-public class DeptConsumer80_App {
+@EnableFeignClients(basePackages = {"com.lish.springcloudtest"})
+@ComponentScan("com.lish.springcloudtest")
+public class DeptConsumer80_Feign_App {
 	public static void main(String[] args) {
-		SpringApplication.run(DeptConsumer80_App.class, args);
+		SpringApplication.run(DeptConsumer80_Feign_App.class, args);
 	}
 }

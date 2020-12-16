@@ -15,3 +15,4 @@ public class EurekaServer7003_app {
 		SpringApplication.run(EurekaServer7003_app.class,args);
 	}
 }
+ 

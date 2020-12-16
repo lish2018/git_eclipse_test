@@ -103,5 +103,8 @@
 		<module>testCloud-eureka-7001</module>
 		<module>testCloud-eureka-7002</module>
 		<module>testCloud-eureka-7003</module>
+		<module>testCloud-provider-dept-8002</module>
+		<module>testCloud-provider-dept-8003</module>
+		<module>testCloud-consumer-dept-feign</module>
 	</modules>
 </project>
